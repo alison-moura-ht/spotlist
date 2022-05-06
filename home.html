@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotlist - Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body class="grey darken-4">
+    <nav class="grey darken-3 px-40">
+      <div class="nav-wrapper">
+        <span>Suas Playlists</span>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="login.html">Sair</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="flex space-between items-center mt-50 p-40">
+      <h1 id="titulo" class="white-text m-0">Seja bem-vind@</h1>
+      <div>
+        <button
+          href="#modal1"
+          class="btn btn-large green accent-3 rounded waves-effect waves-light modal-trigger"
+        >
+          Nova Playlist
+        </button>
+      </div>
+    </div>
+    <section class="row" id="sectionPlaylist"></section>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal grey darken-4 p-40">
+      <div class="modal-content white-text">
+        <h4>Nova playlist</h4>
+        <form class="row">
+          <div class="input-field col s6">
+            <input id="inputNome" type="text" class="white-text" />
+            <label for="inputNome">Nome da playlist</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="inputDescricao" type="text" class="white-text" />
+            <label for="inputDescricao">Descrição da playlist</label>
+          </div>
+          <div class="switch col s3">
+            <label>
+              Pública
+              <input id="checkboxPublica" type="checkbox" />
+              <span class="lever"></span>
+            </label>
+          </div>
+          <div class="switch col s3">
+            <label>
+              Colaborativa
+              <input id="checkboxColaborativa" type="checkbox"/>
+              <span class="lever"></span>
+            </label>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer grey darken-4">
+        <a
+          href="#!"
+          class="modal-close waves-effect waves-green btn-flat white-text"
+          >Cancelar</a
+        >
+        <button id="btnSalvar" class="btn rounded green accent-3">Salvar</button>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./index.js"></script>
+    <script type="module" src="./controller/home.js"></script>
+  </body>
+</html>

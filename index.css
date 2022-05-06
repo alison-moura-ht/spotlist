@@ -1,0 +1,40 @@
+.rounded {
+    border-radius: 30px;
+}
+.m-0 {
+    margin: 0;
+}
+.mt-100 {
+    margin-top: 100px;
+}
+.mt-50 {
+    margin-top: 50px;
+}
+.p-40 {
+    padding: 40px;
+}
+.p-20 {
+    padding: 20px;
+}
+.px-40 {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.flex {
+    display: flex;
+}
+.space-between {
+    justify-content: space-between;
+}
+.items-center {
+    align-items: center;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+    color: #1de9b6 !important;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #1de9b6 !important;
+    box-shadow: 0 1px 0 0 #1de9b6 !important;
+}
