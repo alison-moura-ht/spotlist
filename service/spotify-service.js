@@ -1,6 +1,6 @@
-const redirectUri = "http://localhost:5500/home.html"
-const clientId = "331dc5e3b64e4904a0e9b4be3c114d59"
-const clientSecret = "aa49476a627240e58374b82c08e18f28"
+const redirectUri = "https://alison-moura-ht.github.io/spotlist-t36/home.html"
+const clientId = "5328f1d9f94f4f3db8cdb38d073f0b12"
+const clientSecret = "f39153c2a117434fa014946052b901eb"
 const usuarioLogado = {}
 let accessToken
 let refreshToken
