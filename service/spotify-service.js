@@ -1,6 +1,7 @@
-const redirectUri = "https://alison-moura-ht.github.io/spotlist-t36/home.html"
-const clientId = "5328f1d9f94f4f3db8cdb38d073f0b12"
-const clientSecret = "f39153c2a117434fa014946052b901eb"
+import config from "./../config.js"
+const redirectUri = config.redirectUri
+const clientId = config.clientId
+const clientSecret = config.clientSecret
 const usuarioLogado = {}
 let accessToken
 let refreshToken
